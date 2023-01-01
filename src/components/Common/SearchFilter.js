@@ -22,8 +22,8 @@ const SearchFilter = ({
         IndicatorSeparator: () => null,
         DropdownIndicator: () => null
       }}
-      value={cityData.filter(({ value }) => value === selectedCity)}
-      options={cityData.filter(city => city.value !== excludedCity)}
+      value={cityData && cityData.filter(({ value }) => value === selectedCity)}
+      options={cityData && cityData.filter(city => city.value !== excludedCity)}
     />
   );
 };
