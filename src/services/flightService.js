@@ -1,4 +1,5 @@
 import axios from "axios";
+import { Data } from "../constants/default";
 
 const flightAxios = axios.create({
   baseURL: "https://tw-frontenders.firebaseio.com"
@@ -21,7 +22,13 @@ export const fetchFlightData = async () => {
       return { flight: flightResponse.data, uniqueCity };
     }
   } catch (err) {
-    errorHandler(err);
-    return err;
+    const uniqueCity = [
+      ...new Set(Data.map(item => item.origin))
+    ].map(item => {
+      return { value: item, label: item };
+    });
+    return { flight: Data, uniqueCity };
+    // errorHandler(err);
+    // return err;
   }
 };

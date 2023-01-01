@@ -344,8 +344,8 @@ export const Data = [
 export const DEFAULT_USER_STATE = {
   originCity: "",
   destinationCity: "",
-  journeyDate: "",
-  returnDate: "",
+  journeyDate: new Date("2020/11/01"),
+  returnDate: new Date("2020/11/02"),
   numOfPassenger: "",
   isOneWayFlight: true,
   priceRange: { min: 0, max: 15000 }
