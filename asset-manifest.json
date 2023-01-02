@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/React_Flight_Search/static/css/main.c782a13d.css",
+    "main.js": "/React_Flight_Search/static/js/main.0ebf3698.js",
+    "static/js/787.7ddfb506.chunk.js": "/React_Flight_Search/static/js/787.7ddfb506.chunk.js",
+    "static/media/subFlightIcon.png": "/React_Flight_Search/static/media/subFlightIcon.b95041b5af58f964512c.png",
+    "static/media/returnPlane.png": "/React_Flight_Search/static/media/returnPlane.3c385d895dd27cdb0f75.png",
+    "static/media/mulipleFlight.png": "/React_Flight_Search/static/media/mulipleFlight.15e151461a9a9efd7f1f.png",
+    "index.html": "/React_Flight_Search/index.html",
+    "main.c782a13d.css.map": "/React_Flight_Search/static/css/main.c782a13d.css.map",
+    "main.0ebf3698.js.map": "/React_Flight_Search/static/js/main.0ebf3698.js.map",
+    "787.7ddfb506.chunk.js.map": "/React_Flight_Search/static/js/787.7ddfb506.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c782a13d.css",
+    "static/js/main.0ebf3698.js"
+  ]
+}
