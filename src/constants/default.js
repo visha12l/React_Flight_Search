@@ -1,7 +1,22 @@
+function padTo2Digits(num) {
+  return num.toString().padStart(2, '0');
+}
+
+function formatDate(duration) {
+  const date = new Date();
+  date.setDate(date.getDate() + Number(duration))
+  return [
+    date.getFullYear(),
+    padTo2Digits(date.getMonth() + 1),
+    padTo2Digits(date.getDate()),
+  ].join('/');
+}
+
+
 export const Data = [
   {
     arrivalTime: "6:00",
-    date: "2020/11/01",
+    date: formatDate(0),
     departureTime: "5:00",
     destination: "Mumbai (BOM)",
     flightNo: "AI-101",
@@ -11,7 +26,7 @@ export const Data = [
   },
   {
     arrivalTime: "9:50",
-    date: "2020/11/01",
+    date: formatDate(0),
     departureTime: "7:20",
     destination: "Delhi (DEL)",
     flightNo: "AI-102",
@@ -21,7 +36,7 @@ export const Data = [
   },
   {
     arrivalTime: "7:10",
-    date: "2020/11/01",
+    date: formatDate(0),
     departureTime: "6:10",
     destination: "Mumbai (BOM)",
     flightNo: "AI-103",
@@ -31,7 +46,7 @@ export const Data = [
   },
   {
     arrivalTime: "10:20",
-    date: "2020/11/01",
+    date: formatDate(0),
     departureTime: "8:10",
     destination: "Delhi (DEL)",
     flightNo: "AI-104",
@@ -41,7 +56,7 @@ export const Data = [
   },
   {
     arrivalTime: "9:15",
-    date: "2020/11/01",
+    date: formatDate(0),
     departureTime: "8:15",
     destination: "Bengaluru (BLR)",
     flightNo: "SJ-105",
@@ -51,7 +66,7 @@ export const Data = [
   },
   {
     arrivalTime: "13:00",
-    date: "2020/11/01",
+    date: formatDate(0),
     departureTime: "11:00",
     destination: "Delhi (DEL)",
     flightNo: "SJ-106",
@@ -61,7 +76,7 @@ export const Data = [
   },
   {
     arrivalTime: "10:00",
-    date: "2020/11/01",
+    date: formatDate(0),
     departureTime: "8:00",
     destination: "Delhi (DEL)",
     flightNo: "SJ-107",
@@ -71,7 +86,7 @@ export const Data = [
   },
   {
     arrivalTime: "10:30",
-    date: "2020/11/01",
+    date: formatDate(0),
     departureTime: "8:00",
     destination: "Bengaluru (BLR)",
     flightNo: "TW-108",
@@ -81,7 +96,7 @@ export const Data = [
   },
   {
     arrivalTime: "15:30",
-    date: "2020/11/01",
+    date: formatDate(0),
     departureTime: "12:00",
     destination: "Delhi (DEL)",
     flightNo: "TW-109",
@@ -91,7 +106,7 @@ export const Data = [
   },
   {
     arrivalTime: "11:30",
-    date: "2020/11/01",
+    date: formatDate(0),
     departureTime: "9:00",
     destination: "Delhi (DEL)",
     flightNo: "AI-110",
@@ -101,7 +116,7 @@ export const Data = [
   },
   {
     arrivalTime: "16:30",
-    date: "2020/11/01",
+    date: formatDate(0),
     departureTime: "14:00",
     destination: "Bengaluru (BLR)",
     flightNo: "AI-111",
@@ -111,7 +126,7 @@ export const Data = [
   },
   {
     arrivalTime: "16:30",
-    date: "2020/11/01",
+    date: formatDate(0),
     departureTime: "14:30",
     destination: "Mumbai (BOM)",
     flightNo: "AI-112",
@@ -121,7 +136,7 @@ export const Data = [
   },
   {
     arrivalTime: "22:30",
-    date: "2020/11/01",
+    date: formatDate(0),
     departureTime: "20:00",
     destination: "Mumbai (BOM)",
     flightNo: "AI-113",
@@ -131,7 +146,7 @@ export const Data = [
   },
   {
     arrivalTime: "22:45",
-    date: "2020/11/01",
+    date: formatDate(0),
     departureTime: "21:30",
     destination: "Mumbai (BOM)",
     flightNo: "AI-114",
@@ -141,7 +156,7 @@ export const Data = [
   },
   {
     arrivalTime: "22:10",
-    date: "2020/11/01",
+    date: formatDate(0),
     departureTime: "20:00",
     destination: "Pune (PNQ)",
     flightNo: "AI-115",
@@ -151,7 +166,7 @@ export const Data = [
   },
   {
     arrivalTime: "19:30",
-    date: "2020/11/01",
+    date: formatDate(0),
     departureTime: "17:20",
     destination: "Bengaluru (BLR)",
     flightNo: "AI-116",
@@ -161,7 +176,7 @@ export const Data = [
   },
   {
     arrivalTime: "14:15",
-    date: "2020/11/01",
+    date: formatDate(0),
     departureTime: "13:15",
     destination: "Pune (PNQ)",
     flightNo: "AI-117",
@@ -171,7 +186,7 @@ export const Data = [
   },
   {
     arrivalTime: "6:00",
-    date: "2020/11/02",
+    date: formatDate(3),
     departureTime: "5:00",
     destination: "Mumbai (BOM)",
     flightNo: "AI-119",
@@ -181,7 +196,7 @@ export const Data = [
   },
   {
     arrivalTime: "9:50",
-    date: "2020/11/02",
+    date: formatDate(4),
     departureTime: "7:20",
     destination: "Pune (PNQ)",
     flightNo: "AI-120",
@@ -191,7 +206,7 @@ export const Data = [
   },
   {
     arrivalTime: "6:58",
-    date: "2020/11/02",
+    date: formatDate(3),
     departureTime: "6:10",
     destination: "Pune (PNQ)",
     flightNo: "AI-121",
@@ -201,7 +216,7 @@ export const Data = [
   },
   {
     arrivalTime: "10:20",
-    date: "2020/11/02",
+    date: formatDate(3),
     departureTime: "8:10",
     destination: "Pune (PNQ)",
     flightNo: "AI-131",
@@ -211,7 +226,7 @@ export const Data = [
   },
   {
     arrivalTime: "9:15",
-    date: "2020/11/02",
+    date: formatDate(2),
     departureTime: "8:15",
     destination: "Bengaluru (BLR)",
     flightNo: "SJ-115",
@@ -221,7 +236,7 @@ export const Data = [
   },
   {
     arrivalTime: "13:00",
-    date: "2020/11/02",
+    date: formatDate(2),
     departureTime: "11:00",
     destination: "Pune (PNQ)",
     flightNo: "SJ-116",
@@ -231,7 +246,7 @@ export const Data = [
   },
   {
     arrivalTime: "10:00",
-    date: "2020/11/02",
+    date: formatDate(2),
     departureTime: "8:00",
     destination: "Bengaluru (BLR)",
     flightNo: "SJ-117",
@@ -241,7 +256,7 @@ export const Data = [
   },
   {
     arrivalTime: "10:30",
-    date: "2020/11/02",
+    date: formatDate(2),
     departureTime: "8:00",
     destination: "Bengaluru (BLR)",
     flightNo: "TW-118",
@@ -251,7 +266,7 @@ export const Data = [
   },
   {
     arrivalTime: "15:30",
-    date: "2020/11/02",
+    date: formatDate(2),
     departureTime: "12:00",
     destination: "Mumbai (BOM)",
     flightNo: "TW-119",
@@ -261,7 +276,7 @@ export const Data = [
   },
   {
     arrivalTime: "11:30",
-    date: "2020/11/02",
+    date: formatDate(2),
     departureTime: "9:00",
     destination: "Mumbai (BOM)",
     flightNo: "AI-130",
@@ -271,7 +286,7 @@ export const Data = [
   },
   {
     arrivalTime: "16:30",
-    date: "2020/11/02",
+    date: formatDate(2),
     departureTime: "14:00",
     destination: "Delhi (DEL)",
     flightNo: "AI-131",
@@ -281,7 +296,7 @@ export const Data = [
   },
   {
     arrivalTime: "16:30",
-    date: "2020/11/02",
+    date: formatDate(2),
     departureTime: "14:30",
     destination: "Delhi (DEL)",
     flightNo: "AI-132",
@@ -291,7 +306,7 @@ export const Data = [
   },
   {
     arrivalTime: "22:30",
-    date: "2020/11/02",
+    date: formatDate(2),
     departureTime: "20:00",
     destination: "Bengaluru (BLR)",
     flightNo: "AI-133",
@@ -301,7 +316,7 @@ export const Data = [
   },
   {
     arrivalTime: "22:45",
-    date: "2020/11/02",
+    date: formatDate(2),
     departureTime: "21:30",
     destination: "Pune (PNQ)",
     flightNo: "AI-134",
@@ -311,7 +326,7 @@ export const Data = [
   },
   {
     arrivalTime: "22:10",
-    date: "2020/11/02",
+    date: formatDate(2),
     departureTime: "20:00",
     destination: "Delhi (DEL)",
     flightNo: "AI-135",
@@ -321,7 +336,7 @@ export const Data = [
   },
   {
     arrivalTime: "19:30",
-    date: "2020/11/02",
+    date: formatDate(2),
     departureTime: "17:20",
     destination: "Pune (PNQ)",
     flightNo: "AI-136",
@@ -331,7 +346,7 @@ export const Data = [
   },
   {
     arrivalTime: "14:15",
-    date: "2020/11/02",
+    date: formatDate(2),
     departureTime: "13:15",
     destination: "Mumbai (BOM)",
     flightNo: "AI-137",
@@ -345,7 +360,7 @@ export const DEFAULT_USER_STATE = {
   originCity: "",
   destinationCity: "",
   journeyDate: new Date("2020/11/01"),
-  returnDate: new Date("2020/11/02"),
+  returnDate: new Date(formatDate(2)),
   numOfPassenger: "",
   isOneWayFlight: true,
   priceRange: { min: 0, max: 15000 }

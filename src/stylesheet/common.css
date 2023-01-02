@@ -1,5 +1,8 @@
 /* // common css */
 
+.d-flex {
+  display: flex;
+}
 .mainHeading {
   font-size: 30px;
   font-weight: bold;
